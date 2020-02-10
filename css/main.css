@@ -1,0 +1,207 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-family: sans-serif, Open-Sans;
+  font-size: 18px; }
+
+section.authentification {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  section.authentification .title {
+    font-family: 'Calligraffitti', cursive;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1em; }
+  section.authentification div button[type=swich] {
+    cursor: pointer;
+    opacity: 0.8;
+    padding: 0 8px 0 8px;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #4A90E2;
+    color: #ffffff; }
+  section.authentification div button:hover {
+    opacity: 1; }
+  section.authentification .loginForm, section.authentification .signupForm {
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column; }
+    section.authentification .loginForm label, section.authentification .signupForm label {
+      margin-top: 1em; }
+    section.authentification .loginForm input, section.authentification .signupForm input {
+      width: 350px;
+      height: 35px; }
+    section.authentification .loginForm input[type=checkbox], section.authentification .signupForm input[type=checkbox] {
+      height: 13px;
+      width: 13px;
+      margin: 1em; }
+    section.authentification .loginForm div, section.authentification .signupForm div {
+      text-align: center; }
+      section.authentification .loginForm div button[type=submit], section.authentification .signupForm div button[type=submit] {
+        cursor: pointer;
+        opacity: 0.8;
+        padding: 3px 10px 3px 10px;
+        margin-top: 0.5em;
+        font-size: 1.2rem;
+        border: none;
+        background-color: #4A90E2;
+        color: #ffffff;
+        height: 40px;
+        width: 150px; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 2em; }
+  header h2 {
+    font-family: 'Calligraffitti', cursive;
+    font-weight: 500; }
+  header div {
+    display: flex; }
+    header div button {
+      cursor: pointer;
+      padding: 3px 10px 3px 10px;
+      margin-right: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      border: none;
+      background-color: dodgerblue;
+      color: #ffffff;
+      height: 30px;
+      width: 120px; }
+    header div .dropdown {
+      position: relative;
+      display: inline-block; }
+      header div .dropdown .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        padding: 15px 20px;
+        z-index: 1;
+        top: 35px;
+        left: -91px; }
+        header div .dropdown .dropdown-content p {
+          color: #ff0000;
+          cursor: pointer; }
+          header div .dropdown .dropdown-content p i {
+            font-size: 20px; }
+      header div .dropdown i {
+        cursor: pointer;
+        font-size: 30px; }
+
+#filter-container {
+  position: absolute;
+  z-index: 100;
+  right: 65px;
+  top: 115px;
+  box-shadow: -1px 3px 5px 0px #736E7C; }
+  #filter-container div:nth-of-type(1) {
+    cursor: pointer;
+    text-align: center; }
+  #filter-container div {
+    background-color: #fff;
+    padding: 6px 22px 6px 22px;
+    font-size: 0.8rem; }
+    #filter-container div div.button {
+      display: flex;
+      padding: 0; }
+      #filter-container div div.button span {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; }
+        #filter-container div div.button span div:nth-of-type(1) {
+          width: 12px; }
+        #filter-container div div.button span div:nth-of-type(2) {
+          width: 8px; }
+        #filter-container div div.button span div:nth-of-type(3) {
+          width: 3px; }
+        #filter-container div div.button span div {
+          background-color: #000000;
+          height: 1px;
+          padding: 0;
+          margin: 0 3px 2px 0; }
+  #filter-container #filter-page {
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    padding: 10px; }
+    #filter-container #filter-page label {
+      margin: 10px 0; }
+    #filter-container #filter-page input {
+      border: 0;
+      border-bottom: 1px solid #696969;
+      margin-bottom: 5px; }
+    #filter-container #filter-page input:focus {
+      outline: none;
+      border-bottom: 1px solid deepskyblue;
+      margin-bottom: 5px; }
+    #filter-container #filter-page button {
+      background-color: #ffffff;
+      border: none;
+      box-shadow: -1px 3px 5px 0px #736E7C;
+      width: 90%;
+      padding: 10px;
+      margin: 15px 0 5px 0; }
+
+#map {
+  height: 50vh;
+  width: 100%; }
+
+#contentMarker {
+  width: 230px; }
+  #contentMarker h1 {
+    font-size: 1.2em; }
+  #contentMarker p {
+    margin: 2px 2px 15px 2px;
+    font-weight: 400; }
+    #contentMarker p span {
+      font-weight: 700;
+      color: #727272; }
+  #contentMarker button {
+    margin: 0.2em 0.5em 0.2em 0.5em; }
+
+section.locationsTable .container {
+  width: 90%;
+  margin: 0 auto; }
+  section.locationsTable .container input[type='text'] {
+    font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
+    margin: 5px 0 15px 0;
+    height: 25px;
+    border: transparent;
+    background-color: #CBCBCB;
+    width: 200px;
+    outline: none;
+    padding-left: 10px; }
+  section.locationsTable .container h1 {
+    margin-top: 0.5em;
+    font-size: 1.2rem; }
+  section.locationsTable .container table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left; }
+    section.locationsTable .container table thead {
+      background-color: #cccccc; }
+      section.locationsTable .container table thead i {
+        float: right;
+        margin-right: 15px;
+        cursor: pointer; }
+      section.locationsTable .container table thead i::after {
+        content: '';
+        display: table;
+        clear: both; }
+    section.locationsTable .container table tr {
+      height: 40px; }
+    section.locationsTable .container table tbody tr:nth-child(even) {
+      background-color: #f3f3f3; }
+
+/*# sourceMappingURL=maps/main.css.map */

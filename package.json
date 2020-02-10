@@ -1,0 +1,46 @@
+{
+  "name": "kitesurfing_app",
+  "version": "1.0.0",
+  "description": "Web application for Kitesurfing",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --hot -d",
+    "build": "webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/GabrielTanase05/test-ab4systems.git"
+  },
+  "author": "Gabriel Tanase",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/GabrielTanase05/test-ab4systems/issues"
+  },
+  "homepage": "https://gitlab.com/GabrielTanase05/test-ab4systems#readme",
+  "dependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
+    "core-util-is": "^1.0.2",
+    "fetch": "^1.1.0",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.2.0",
+    "gulp-sass": "^4.0.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-google-maps": "^9.4.5",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1",
+    "whatwg-fetch": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/google-maps": "^3.2.1",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "html-webpack-plugin": "^3.2.0"
+  }
+}
